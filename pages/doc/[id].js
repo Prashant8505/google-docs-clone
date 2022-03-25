@@ -19,10 +19,6 @@ function Doc() {
     const router = useRouter()
     const { id } = router.query
 
-    if (!session) return <Login />
-
-
-
 
 
     const [snapshot, loadingSnapshot] = useDocumentOnce(db.collection("userDocs")
